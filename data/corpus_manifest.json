@@ -1,0 +1,36 @@
+{
+  "corpus_name": "NIST AI risk and trustworthy-AI guidance",
+  "purpose": "Public, versioned primary sources for an evidence-first AI-governance assistant.",
+  "sources": [
+    {
+      "id": "nist-ai-100-1",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+      "pdf_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "published": "2023-01-26",
+      "version": "1.0",
+      "trust_tier": "official",
+      "notes": "NIST states this framework is being revised; retain this version instead of overwriting it."
+    },
+    {
+      "id": "nist-ai-600-1",
+      "title": "Artificial Intelligence Risk Management Framework: Generative AI Profile",
+      "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+      "pdf_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "published": "2024-07-26",
+      "version": "1.0",
+      "trust_tier": "official",
+      "notes": "Companion profile for generative-AI risk management."
+    },
+    {
+      "id": "nist-ai-rmf-playbook",
+      "title": "NIST AI RMF Playbook",
+      "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+      "published": "2023-03-30",
+      "version": "living-resource",
+      "trust_tier": "official",
+      "notes": "Snapshot this source on ingestion and record the retrieval date because NIST describes it as a living resource.",
+      "ingestion_status": "planned"
+    }
+  ]
+}

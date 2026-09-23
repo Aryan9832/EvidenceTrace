@@ -1,0 +1,23 @@
+{
+  "name": "Synthetic EvidenceTrace demonstration suite",
+  "cases": [
+    {
+      "question": "When must a reviewer escalate a high-risk change?",
+      "answerable": true,
+      "expected_sources": ["demo://change-control-policy"],
+      "top_k": 5
+    },
+    {
+      "question": "Who approves a request outside the policy?",
+      "answerable": true,
+      "expected_sources": ["demo://change-control-policy"],
+      "top_k": 5
+    },
+    {
+      "question": "What is the company stock-price target?",
+      "answerable": false,
+      "expected_sources": [],
+      "top_k": 5
+    }
+  ]
+}

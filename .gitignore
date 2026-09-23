@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+build/
+*.egg-info/
+data/*.db
+data/sources/
+data/processed/
+artifacts/evaluations/
+artifacts/experiments/
+build/lambda/
+build/evidencetrace-lambda.zip
