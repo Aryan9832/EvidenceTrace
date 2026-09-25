@@ -1,0 +1,1916 @@
+{
+  "generated_at": "2026-09-25T07:44:14.946221+00:00",
+  "corpus_snapshot": "62d5ba8c6b6f8709c4ca2ad0c76822aa73d756248ead1c500229f404e5ea9c07",
+  "documents": 7,
+  "pages": 497,
+  "passages": 2264,
+  "sources": [
+    {
+      "title": "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations",
+      "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+      "version": "2025",
+      "source_sha256": "4811fb6ad73f9c9121843ab77e029b5adc6f2c86d33c2fc5b2099ef133847646",
+      "page_count": 127,
+      "chunk_count": 683
+    },
+    {
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+      "version": "1.0",
+      "source_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "page_count": 48,
+      "chunk_count": 202
+    },
+    {
+      "title": "Artificial Intelligence Risk Management Framework: Generative AI Profile",
+      "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+      "version": "1.0",
+      "source_sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
+      "page_count": 64,
+      "chunk_count": 309
+    },
+    {
+      "title": "NIST AI RMF Playbook",
+      "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+      "version": "living-resource",
+      "source_sha256": "65d6101d806502875aadb0fd19a75c3a9cc9a5e9461129e9398a39192d8202d2",
+      "page_count": 147,
+      "chunk_count": 581
+    },
+    {
+      "title": "Secure Software Development Framework (SSDF) Version 1.1",
+      "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+      "version": "1.1",
+      "source_sha256": "617746e553a9e2da49bfbd4eef0dfc3094758a39b869314e4173ac36605cde22",
+      "page_count": 36,
+      "chunk_count": 189
+    },
+    {
+      "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+      "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+      "version": "1.0",
+      "source_sha256": "e088c8bc75716824dae7c36a987f408364638561d381ed001b5c12254a7b10d8",
+      "page_count": 30,
+      "chunk_count": 128
+    },
+    {
+      "title": "OWASP Top 10 for Large Language Model Applications 2025",
+      "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+      "version": "2025",
+      "source_sha256": "eee39216f0e6750fe08f11d17beb1b7e132557db3ed87dcd389cd3d035c4a4c1",
+      "page_count": 45,
+      "chunk_count": 172
+    }
+  ],
+  "evaluations": [
+    {
+      "suite": "NIST AI-risk retrieval suite v0.1",
+      "cases": 28,
+      "retrieval_recall_at_k": 0.917,
+      "mean_reciprocal_rank": 0.844,
+      "citation_page_recall_at_k": 0.542,
+      "answerable_cases": 24,
+      "abstention_rate": 1.0,
+      "notes": [
+        "Retrieval-only evaluation. Add answer-quality judging after selecting a model provider.",
+        "Project-authored development/regression suite, not an independent held-out benchmark.",
+        "Legacy retrieval_recall_at_k is source hit-rate@k (at least one expected source), not passage recall or answer correctness."
+      ],
+      "case_results": [
+        {
+          "id": "rmf-purpose",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 7,
+              "chunk_id": 18
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 19,
+              "chunk_id": 74
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 18,
+              "chunk_id": 70
+            }
+          ],
+          "latency_ms": 9.59
+        },
+        {
+          "id": "rmf-trustworthiness",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 17,
+              "chunk_id": 62
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 35,
+              "chunk_id": 1431
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 19,
+              "chunk_id": 593
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 12,
+              "chunk_id": 253
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 73,
+              "chunk_id": 1635
+            }
+          ],
+          "latency_ms": 18.06
+        },
+        {
+          "id": "rmf-core",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 25,
+              "chunk_id": 101
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 8,
+              "chunk_id": 24
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 44,
+              "chunk_id": 187
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 4,
+              "chunk_id": 7
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 26,
+              "chunk_id": 106
+            }
+          ],
+          "latency_ms": 9.09
+        },
+        {
+          "id": "rmf-govern",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 27,
+              "chunk_id": 107
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 5,
+              "chunk_id": 12
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 25,
+              "chunk_id": 101
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 26,
+              "chunk_id": 106
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 30,
+              "chunk_id": 125
+            }
+          ],
+          "latency_ms": 23.81
+        },
+        {
+          "id": "rmf-map-engagement",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 33,
+              "chunk_id": 136
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 94,
+              "chunk_id": 880
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 32,
+              "chunk_id": 354
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 88,
+              "chunk_id": 1724
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 37,
+              "chunk_id": 1240
+            }
+          ],
+          "latency_ms": 15.37
+        },
+        {
+          "id": "rmf-measure",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 36,
+              "chunk_id": 150
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 136,
+              "chunk_id": 1045
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 33,
+              "chunk_id": 140
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 34,
+              "chunk_id": 142
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 35,
+              "chunk_id": 148
+            }
+          ],
+          "latency_ms": 17.94
+        },
+        {
+          "id": "rmf-user-feedback",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 36,
+              "chunk_id": 150
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 15,
+              "chunk_id": 58
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 42,
+              "chunk_id": 179
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 46,
+              "chunk_id": 196
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 30,
+              "chunk_id": 123
+            }
+          ],
+          "latency_ms": 16.13
+        },
+        {
+          "id": "rmf-manage-monitoring",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://airc.nist.gov/airmf-resources/playbook/"
+          ],
+          "reciprocal_rank": 0.5,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 56,
+              "chunk_id": 732
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 38,
+              "chunk_id": 159
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 61,
+              "chunk_id": 1560
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 56,
+              "chunk_id": 476
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 57,
+              "chunk_id": 737
+            }
+          ],
+          "latency_ms": 16.27
+        },
+        {
+          "id": "rmf-cross-sector",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 39,
+              "chunk_id": 164
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 38,
+              "chunk_id": 161
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 25,
+              "chunk_id": 101
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 21,
+              "chunk_id": 84
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 5,
+              "chunk_id": 12
+            }
+          ],
+          "latency_ms": 15.95
+        },
+        {
+          "id": "rmf-safety",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 20,
+              "chunk_id": 78
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 19,
+              "chunk_id": 75
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 40,
+              "chunk_id": 169
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 41,
+              "chunk_id": 175
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 35,
+              "chunk_id": 146
+            }
+          ],
+          "latency_ms": 16.71
+        },
+        {
+          "id": "genai-profile-purpose",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 11,
+              "chunk_id": 250
+            }
+          ],
+          "latency_ms": 5.85
+        },
+        {
+          "id": "genai-cbrn",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 8,
+              "chunk_id": 229
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 9,
+              "chunk_id": 236
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 11,
+              "chunk_id": 247
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 33,
+              "chunk_id": 360
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 14,
+              "chunk_id": 268
+            }
+          ],
+          "latency_ms": 18.1
+        },
+        {
+          "id": "genai-confabulation-definition",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 10,
+              "chunk_id": 241
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 62,
+              "chunk_id": 503
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 8,
+              "chunk_id": 229
+            }
+          ],
+          "latency_ms": 6.65
+        },
+        {
+          "id": "genai-misinformation",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.AI.100-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 14,
+              "chunk_id": 266
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 9,
+              "chunk_id": 1974
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 36,
+              "chunk_id": 1233
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 94,
+              "chunk_id": 881
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 11,
+              "chunk_id": 36
+            }
+          ],
+          "latency_ms": 20.95
+        },
+        {
+          "id": "genai-information-security",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.SP.800-218"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 13,
+              "chunk_id": 262
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 3,
+              "chunk_id": 1953
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 16,
+              "chunk_id": 582
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 44,
+              "chunk_id": 188
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 10,
+              "chunk_id": 2108
+            }
+          ],
+          "latency_ms": 27.86
+        },
+        {
+          "id": "genai-periodic-review",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://doi.org/10.6028/NIST.SP.800-218"
+          ],
+          "reciprocal_rank": 0.5,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 28,
+              "chunk_id": 113
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 5,
+              "chunk_id": 213
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 13,
+              "chunk_id": 569
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 26,
+              "chunk_id": 2056
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 14,
+              "chunk_id": 2135
+            }
+          ],
+          "latency_ms": 18.12
+        },
+        {
+          "id": "genai-third-party",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 47,
+              "chunk_id": 430
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 42,
+              "chunk_id": 178
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 16,
+              "chunk_id": 2005
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 90,
+              "chunk_id": 866
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 18,
+              "chunk_id": 1164
+            }
+          ],
+          "latency_ms": 18.29
+        },
+        {
+          "id": "genai-data-origin",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.SP.800-218"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 55,
+              "chunk_id": 471
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 25,
+              "chunk_id": 2051
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 43,
+              "chunk_id": 181
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 71,
+              "chunk_id": 1618
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 15,
+              "chunk_id": 2143
+            }
+          ],
+          "latency_ms": 18.31
+        },
+        {
+          "id": "genai-fact-checking",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [],
+          "reciprocal_rank": 0.0,
+          "passed": false,
+          "retrieved_evidence": [],
+          "latency_ms": 13.19
+        },
+        {
+          "id": "genai-training-data",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 15,
+              "chunk_id": 272
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 52,
+              "chunk_id": 455
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 8,
+              "chunk_id": 230
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 56,
+              "chunk_id": 478
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 7,
+              "chunk_id": 222
+            }
+          ],
+          "latency_ms": 16.95
+        },
+        {
+          "id": "genai-human-evaluations",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://doi.org/10.6028/NIST.SP.800-218",
+            "https://doi.org/10.6028/NIST.SP.800-218A"
+          ],
+          "reciprocal_rank": 0.0,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 104,
+              "chunk_id": 919
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 34,
+              "chunk_id": 143
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 17,
+              "chunk_id": 1158
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 3,
+              "chunk_id": 2078
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 3,
+              "chunk_id": 1953
+            }
+          ],
+          "latency_ms": 16.42
+        },
+        {
+          "id": "genai-security-resilience",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.SP.800-218A"
+          ],
+          "reciprocal_rank": 0.25,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 12,
+              "chunk_id": 1306
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 35,
+              "chunk_id": 146
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 115,
+              "chunk_id": 963
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 37,
+              "chunk_id": 380
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 25,
+              "chunk_id": 2051
+            }
+          ],
+          "latency_ms": 18.37
+        },
+        {
+          "id": "genai-incident-escalation",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.100-1",
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://doi.org/10.6028/NIST.SP.800-218"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": false,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 57,
+              "chunk_id": 480
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
+              "page": 12,
+              "chunk_id": 43
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 3,
+              "chunk_id": 1953
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 20,
+              "chunk_id": 598
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 3,
+              "chunk_id": 2078
+            }
+          ],
+          "latency_ms": 20.37
+        },
+        {
+          "id": "genai-considerations",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1",
+            "https://doi.org/10.6028/NIST.AI.600-1"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 51,
+              "chunk_id": 446
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 58,
+              "chunk_id": 482
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 16,
+              "chunk_id": 280
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 60,
+              "chunk_id": 496
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
+              "page": 17,
+              "chunk_id": 282
+            }
+          ],
+          "latency_ms": 10.75
+        },
+        {
+          "id": "negative-stock-price",
+          "answerable": false,
+          "expected_sources": [],
+          "retrieved_sources": [],
+          "reciprocal_rank": null,
+          "passed": true,
+          "retrieved_evidence": [],
+          "latency_ms": 14.74
+        },
+        {
+          "id": "negative-weather",
+          "answerable": false,
+          "expected_sources": [],
+          "retrieved_sources": [],
+          "reciprocal_rank": null,
+          "passed": true,
+          "retrieved_evidence": [],
+          "latency_ms": 5.29
+        },
+        {
+          "id": "negative-programming-language",
+          "answerable": false,
+          "expected_sources": [],
+          "retrieved_sources": [],
+          "reciprocal_rank": null,
+          "passed": true,
+          "retrieved_evidence": [],
+          "latency_ms": 10.68
+        },
+        {
+          "id": "negative-system-prompt",
+          "answerable": false,
+          "expected_sources": [],
+          "retrieved_sources": [],
+          "reciprocal_rank": null,
+          "passed": true,
+          "retrieved_evidence": [],
+          "latency_ms": 0.01
+        }
+      ],
+      "corpus_snapshot": "62d5ba8c6b6f8709c4ca2ad0c76822aa73d756248ead1c500229f404e5ea9c07",
+      "retrieval_version": "fts5-rrf-source-filter-snapshot-v2",
+      "latency_p50_ms": 16.34,
+      "latency_p95_ms": 23.81
+    },
+    {
+      "suite": "AI security expansion development suite v0.2",
+      "cases": 21,
+      "retrieval_recall_at_k": 1.0,
+      "mean_reciprocal_rank": 1.0,
+      "citation_page_recall_at_k": 1.0,
+      "answerable_cases": 17,
+      "abstention_rate": 1.0,
+      "notes": [
+        "Retrieval-only evaluation. Add answer-quality judging after selecting a model provider.",
+        "Project-authored regression questions. Physical page labels checked against extracted primary-source passages. Not independently reviewed or held out.",
+        "Legacy retrieval_recall_at_k is source hit-rate@k (at least one expected source), not passage recall or answer correctness."
+      ],
+      "case_results": [
+        {
+          "id": "owasp-injection",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 7,
+              "chunk_id": 1122
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 10,
+              "chunk_id": 1135
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 32,
+              "chunk_id": 1220
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 8,
+              "chunk_id": 1127
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 21,
+              "chunk_id": 1179
+            }
+          ],
+          "latency_ms": 13.38
+        },
+        {
+          "id": "owasp-disclosure",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 13,
+              "chunk_id": 1147
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 11,
+              "chunk_id": 1141
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 8,
+              "chunk_id": 1125
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 30,
+              "chunk_id": 1211
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 10,
+              "chunk_id": 1134
+            }
+          ],
+          "latency_ms": 23.18
+        },
+        {
+          "id": "owasp-supply-chain",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 16,
+              "chunk_id": 1155
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 15,
+              "chunk_id": 1150
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 22,
+              "chunk_id": 1181
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 19,
+              "chunk_id": 1170
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 20,
+              "chunk_id": 1173
+            }
+          ],
+          "latency_ms": 16.19
+        },
+        {
+          "id": "owasp-poisoning",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 20,
+              "chunk_id": 1175
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 22,
+              "chunk_id": 1181
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 33,
+              "chunk_id": 1223
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 17,
+              "chunk_id": 1160
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 15,
+              "chunk_id": 1151
+            }
+          ],
+          "latency_ms": 16.42
+        },
+        {
+          "id": "owasp-output",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 23,
+              "chunk_id": 1184
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 24,
+              "chunk_id": 1188
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 8,
+              "chunk_id": 1128
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 26,
+              "chunk_id": 1197
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 25,
+              "chunk_id": 1192
+            }
+          ],
+          "latency_ms": 11.22
+        },
+        {
+          "id": "owasp-agency",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 26,
+              "chunk_id": 1197
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 27,
+              "chunk_id": 1200
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 28,
+              "chunk_id": 1206
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 5,
+              "chunk_id": 1117
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 41,
+              "chunk_id": 1256
+            }
+          ],
+          "latency_ms": 8.04
+        },
+        {
+          "id": "owasp-leakage",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 30,
+              "chunk_id": 1210
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 5,
+              "chunk_id": 1117
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 11,
+              "chunk_id": 1141
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 32,
+              "chunk_id": 1220
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 31,
+              "chunk_id": 1215
+            }
+          ],
+          "latency_ms": 14.64
+        },
+        {
+          "id": "owasp-vectors",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 33,
+              "chunk_id": 1221
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 5,
+              "chunk_id": 1116
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 34,
+              "chunk_id": 1225
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 35,
+              "chunk_id": 1232
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 20,
+              "chunk_id": 1172
+            }
+          ],
+          "latency_ms": 9.0
+        },
+        {
+          "id": "owasp-misinformation",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 36,
+              "chunk_id": 1233
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 37,
+              "chunk_id": 1238
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 21,
+              "chunk_id": 1179
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 38,
+              "chunk_id": 1244
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 18,
+              "chunk_id": 1163
+            }
+          ],
+          "latency_ms": 11.97
+        },
+        {
+          "id": "owasp-consumption",
+          "answerable": true,
+          "expected_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "retrieved_sources": [
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+            "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 39,
+              "chunk_id": 1246
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 5,
+              "chunk_id": 1116
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 42,
+              "chunk_id": 1261
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 40,
+              "chunk_id": 1253
+            },
+            {
+              "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "page": 8,
+              "chunk_id": 1128
+            }
+          ],
+          "latency_ms": 6.81
+        },
+        {
+          "id": "playbook-govern",
+          "answerable": true,
+          "expected_sources": [
+            "https://airc.nist.gov/airmf-resources/playbook/"
+          ],
+          "retrieved_sources": [
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://airc.nist.gov/airmf-resources/playbook/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 6,
+              "chunk_id": 540
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 16,
+              "chunk_id": 582
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 52,
+              "chunk_id": 715
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 41,
+              "chunk_id": 672
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 39,
+              "chunk_id": 666
+            }
+          ],
+          "latency_ms": 14.54
+        },
+        {
+          "id": "playbook-monitoring",
+          "answerable": true,
+          "expected_sources": [
+            "https://airc.nist.gov/airmf-resources/playbook/"
+          ],
+          "retrieved_sources": [
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://airc.nist.gov/airmf-resources/playbook/",
+            "https://airc.nist.gov/airmf-resources/playbook/"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 13,
+              "chunk_id": 572
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 114,
+              "chunk_id": 958
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 56,
+              "chunk_id": 732
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 57,
+              "chunk_id": 737
+            },
+            {
+              "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
+              "page": 113,
+              "chunk_id": 956
+            }
+          ],
+          "latency_ms": 13.45
+        },
+        {
+          "id": "aml-poisoning",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-2e2025"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 10,
+              "chunk_id": 1297
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 48,
+              "chunk_id": 1499
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 17,
+              "chunk_id": 1328
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 32,
+              "chunk_id": 1411
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 15,
+              "chunk_id": 1324
+            }
+          ],
+          "latency_ms": 17.99
+        },
+        {
+          "id": "aml-evasion",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-2e2025"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 15,
+              "chunk_id": 1324
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 29,
+              "chunk_id": 1397
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 24,
+              "chunk_id": 1365
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 27,
+              "chunk_id": 1386
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 28,
+              "chunk_id": 1388
+            }
+          ],
+          "latency_ms": 19.62
+        },
+        {
+          "id": "aml-privacy",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-2e2025"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025",
+            "https://doi.org/10.6028/NIST.AI.100-2e2025"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 46,
+              "chunk_id": 1493
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 20,
+              "chunk_id": 1344
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 15,
+              "chunk_id": 1324
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 45,
+              "chunk_id": 1489
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+              "page": 41,
+              "chunk_id": 1465
+            }
+          ],
+          "latency_ms": 23.74
+        },
+        {
+          "id": "ssdf-security-requirements",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.SP.800-218"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.SP.800-218",
+            "https://doi.org/10.6028/NIST.SP.800-218",
+            "https://doi.org/10.6028/NIST.SP.800-218",
+            "https://doi.org/10.6028/NIST.SP.800-218",
+            "https://doi.org/10.6028/NIST.SP.800-218"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 14,
+              "chunk_id": 2129
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 17,
+              "chunk_id": 2155
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 12,
+              "chunk_id": 2117
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 20,
+              "chunk_id": 2178
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+              "page": 21,
+              "chunk_id": 2186
+            }
+          ],
+          "latency_ms": 19.17
+        },
+        {
+          "id": "ssdf-ai-profile",
+          "answerable": true,
+          "expected_sources": [
+            "https://doi.org/10.6028/NIST.SP.800-218A"
+          ],
+          "retrieved_sources": [
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://doi.org/10.6028/NIST.SP.800-218A",
+            "https://doi.org/10.6028/NIST.SP.800-218A"
+          ],
+          "reciprocal_rank": 1.0,
+          "passed": true,
+          "retrieved_evidence": [
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 10,
+              "chunk_id": 1978
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 25,
+              "chunk_id": 2050
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 12,
+              "chunk_id": 1984
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 18,
+              "chunk_id": 2016
+            },
+            {
+              "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+              "page": 6,
+              "chunk_id": 1962
+            }
+          ],
+          "latency_ms": 28.12
+        },
+        {
+          "id": "negative-company-secret",
+          "answerable": false,
+          "expected_sources": [],
+          "retrieved_sources": [],
+          "reciprocal_rank": null,
+          "passed": true,
+          "retrieved_evidence": [],
+          "latency_ms": 14.33
+        },
+        {
+          "id": "negative-local-fact",
+          "answerable": false,
+          "expected_sources": [],
+          "retrieved_sources": [],
+          "reciprocal_rank": null,
+          "passed": true,
+          "retrieved_evidence": [],
+          "latency_ms": 6.12
+        },
+        {
+          "id": "negative-stock",
+          "answerable": false,
+          "expected_sources": [],
+          "retrieved_sources": [],
+          "reciprocal_rank": null,
+          "passed": true,
+          "retrieved_evidence": [],
+          "latency_ms": 12.3
+        },
+        {
+          "id": "negative-injection",
+          "answerable": false,
+          "expected_sources": [],
+          "retrieved_sources": [],
+          "reciprocal_rank": null,
+          "passed": true,
+          "retrieved_evidence": [],
+          "latency_ms": 0.01
+        }
+      ],
+      "corpus_snapshot": "62d5ba8c6b6f8709c4ca2ad0c76822aa73d756248ead1c500229f404e5ea9c07",
+      "retrieval_version": "fts5-rrf-source-filter-snapshot-v2",
+      "latency_p50_ms": 14.33,
+      "latency_p95_ms": 23.74
+    }
+  ],
+  "limits": [
+    "Development/regression suites, not held-out validation.",
+    "Source hit-rate and exact-page hits do not measure generated answer accuracy.",
+    "Review discovery is lexical and final coverage decisions require a human."
+  ]
+}

@@ -5,6 +5,11 @@ __pycache__/
 build/
 *.egg-info/
 data/*.db
+data/*.db-*
+data/*.sqlite*
+artifacts/corpus/
+artifacts/previews/
+artifacts/private/
 data/sources/
 data/processed/
 artifacts/evaluations/

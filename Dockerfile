@@ -2,8 +2,9 @@ FROM python:3.12-slim
 
 WORKDIR /app
 COPY pyproject.toml ./
+COPY constraints-tested.txt ./
 COPY app ./app
-RUN pip install --no-cache-dir .
+RUN pip install --no-cache-dir -c constraints-tested.txt .
 COPY evals ./evals
 COPY data ./data
 

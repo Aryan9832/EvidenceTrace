@@ -1,36 +1,100 @@
 {
-  "corpus_name": "NIST AI risk and trustworthy-AI guidance",
+  "corpus_name": "AI governance, application security, and secure development",
   "purpose": "Public, versioned primary sources for an evidence-first AI-governance assistant.",
   "sources": [
     {
       "id": "nist-ai-100-1",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
       "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
       "source_uri": "https://doi.org/10.6028/NIST.AI.100-1",
       "pdf_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
       "published": "2023-01-26",
       "version": "1.0",
       "trust_tier": "official",
+      "publisher": "NIST",
+      "framework": "AI RMF",
+      "search_aliases": ["AI RMF", "AI Risk Management Framework"],
       "notes": "NIST states this framework is being revised; retain this version instead of overwriting it."
     },
     {
       "id": "nist-ai-600-1",
+      "sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
       "title": "Artificial Intelligence Risk Management Framework: Generative AI Profile",
       "source_uri": "https://doi.org/10.6028/NIST.AI.600-1",
       "pdf_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
       "published": "2024-07-26",
       "version": "1.0",
       "trust_tier": "official",
+      "publisher": "NIST",
+      "framework": "GenAI Profile",
+      "search_aliases": ["GenAI Profile", "Generative AI Profile"],
       "notes": "Companion profile for generative-AI risk management."
     },
     {
       "id": "nist-ai-rmf-playbook",
+      "sha256": "65d6101d806502875aadb0fd19a75c3a9cc9a5e9461129e9398a39192d8202d2",
       "title": "NIST AI RMF Playbook",
       "source_uri": "https://airc.nist.gov/airmf-resources/playbook/",
-      "published": "2023-03-30",
+      "pdf_url": "https://airc.nist.gov/docs/AI_RMF_Playbook.pdf",
       "version": "living-resource",
       "trust_tier": "official",
+      "publisher": "NIST",
+      "framework": "AI RMF Playbook",
+      "search_aliases": ["AI RMF Playbook", "Playbook"],
       "notes": "Snapshot this source on ingestion and record the retrieval date because NIST describes it as a living resource.",
-      "ingestion_status": "planned"
+      "ingestion_status": "enabled"
+    },
+    {
+      "id": "owasp-llm-top10-2025",
+      "sha256": "eee39216f0e6750fe08f11d17beb1b7e132557db3ed87dcd389cd3d035c4a4c1",
+      "title": "OWASP Top 10 for Large Language Model Applications 2025",
+      "source_uri": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+      "pdf_url": "https://genai.owasp.org/download/43299/",
+      "version": "2025",
+      "publisher": "OWASP",
+      "framework": "LLM Top 10",
+      "search_aliases": ["OWASP", "LLM Top 10"],
+      "trust_tier": "official",
+      "notes": "Community security guidance, not a regulation. Preserve attribution to OWASP and the source license. Edition name is not an effective date."
+    },
+    {
+      "id": "nist-ai-100-2e2025",
+      "sha256": "4811fb6ad73f9c9121843ab77e029b5adc6f2c86d33c2fc5b2099ef133847646",
+      "title": "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations",
+      "source_uri": "https://doi.org/10.6028/NIST.AI.100-2e2025",
+      "pdf_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf",
+      "version": "2025",
+      "published": "2025-03-24",
+      "publisher": "NIST",
+      "framework": "Adversarial ML",
+      "search_aliases": ["Adversarial Machine Learning", "Adversarial ML"],
+      "trust_tier": "official"
+    },
+    {
+      "id": "nist-sp-800-218a",
+      "sha256": "e088c8bc75716824dae7c36a987f408364638561d381ed001b5c12254a7b10d8",
+      "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+      "source_uri": "https://doi.org/10.6028/NIST.SP.800-218A",
+      "pdf_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218A.pdf",
+      "version": "1.0",
+      "published": "2024-07-26",
+      "publisher": "NIST",
+      "framework": "SSDF AI Profile",
+      "search_aliases": ["SSDF AI Profile", "800-218A"],
+      "trust_tier": "official"
+    },
+    {
+      "id": "nist-sp-800-218",
+      "sha256": "617746e553a9e2da49bfbd4eef0dfc3094758a39b869314e4173ac36605cde22",
+      "title": "Secure Software Development Framework (SSDF) Version 1.1",
+      "source_uri": "https://doi.org/10.6028/NIST.SP.800-218",
+      "pdf_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf",
+      "version": "1.1",
+      "published": "2022-02-03",
+      "publisher": "NIST",
+      "framework": "SSDF",
+      "search_aliases": ["SSDF", "800-218"],
+      "trust_tier": "official"
     }
   ]
 }

@@ -1,7 +1,7 @@
 [project]
 name = "evidencetrace"
-version = "0.1.0"
-description = "An evidence-first, version-aware RAG service with evaluation and audit traces."
+version = "0.2.0"
+description = "An AI governance and security evidence workspace with versioned retrieval and human-reviewed findings."
 requires-python = ">=3.11"
 dependencies = [
   "fastapi>=0.115,<1",
@@ -22,6 +22,9 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 include = ["app*"]
+
+[tool.setuptools.package-data]
+app = ["static/*.html", "static/*.css", "static/*.js"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

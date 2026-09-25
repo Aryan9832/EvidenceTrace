@@ -1,0 +1,8 @@
+# Direct runtime versions used for the v0.2 local verification.
+fastapi==0.141.1
+starlette==1.6.0
+pydantic==2.11.5
+pypdf==6.18.1
+openai==3.13.0
+uvicorn==0.52.4
+httpx==0.28.1

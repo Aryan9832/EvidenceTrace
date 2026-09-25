@@ -8,13 +8,22 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      PYTEST_DISABLE_PLUGIN_AUTOLOAD: "1"
+      EVIDENCETRACE_DB_PATH: data/evidencetrace-v0.2.db
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install ".[dev]"
+      - run: pip install -c constraints-tested.txt ".[dev]"
       - run: pytest -q
       - run: python -m compileall app
-      - run: python scripts/build_nist_corpus.py --ingest
+      - run: python scripts/build_corpus.py
       - run: python scripts/quality_gate.py
+      - run: python scripts/quality_gate.py --suite evals/security_golden_set.json
+      - run: python scripts/release_report.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: retrieval-release-report
+          path: reports/release-v0.2.json
