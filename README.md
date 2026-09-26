@@ -4,9 +4,10 @@
 inspect exact passages, review a system design, and record decisions with an audit
 trail. It retrieves published knowledge; it does not train a foundation model.
 
-**Deployment status:** the [existing AWS demo](https://7sg5kts66a.execute-api.us-east-2.amazonaws.com/default/)
-is the earlier research release. The v0.2 workspace described here is implemented
-and tested locally; it has not yet been rolled out to that URL.
+**Deployment status:** the [public AWS research workspace](https://7sg5kts66a.execute-api.us-east-2.amazonaws.com/default/)
+runs v0.2. It exposes the versioned public corpus and source-record views; private
+design reviews and request traces remain intentionally unavailable on Lambda,
+whose `/tmp` storage is ephemeral.
 
 ## Try the workspace
 
@@ -135,11 +136,12 @@ python scripts/compare_retrieval.py --weights 0.25 0.7
 The browser keeps that key in memory only. The Docker image excludes local databases,
 secrets, and review artifacts; the persistent data volume is mounted at runtime.
 
-`python scripts/package_release.py` builds a Linux/Python-3.12 Lambda archive.
+`python scripts/package_release.py` builds the Linux/Python-3.12 Lambda archive
+used by the public deployment.
 It exports only public documents/chunks into a fresh database, with no reviews,
 decision events, traces, or secrets. Lambda's `/tmp` storage remains ephemeral, so
-private review creation is disabled there. This command builds an artifact; it does
-not deploy resources or change the live site.
+private review creation is disabled there. The command itself only builds an
+artifact; it does not deploy resources or change the live site.
 
 Gemini generation uses Google's documented OpenAI-compatible endpoint. Set
 `GEMINI_API_KEY` and an available `GEMINI_MODEL`; alternatively set `OPENAI_API_KEY`

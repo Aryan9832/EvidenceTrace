@@ -57,8 +57,8 @@ The product supports a concrete AI design-review task:
 
 ## Deployment status and remaining work
 
-The public AWS URL still runs the earlier release. A local v0.2 workspace and
-sanitized Lambda build can be reviewed before any rollout. Private reviews are
+The public AWS URL runs the v0.2 **research** workspace, including the expanded
+public corpus, source library, and cited-passage view. Private reviews are
 explicitly disabled on Lambda because `/tmp` is ephemeral. Full hosted private
 reviews require persistent storage and a deployment design appropriate to it.
 
