@@ -142,6 +142,9 @@ async function initialize() {
     $('#runtime').textContent = health.local_mode ? 'Local workspace' : 'Hosted workspace';
     $('#capability').textContent = health.generation_enabled ? 'Generation configured' : 'Evidence retrieval enabled';
     $('#generate').disabled = !health.generation_enabled;
+    // A public Lambda demo has no operator key: its traces remain intentionally
+    // private instead of leading visitors to an authorization error.
+    $('#trace-button').hidden = !health.trace_enabled;
     if (!health.review_enabled) {
       $('#review-button').disabled = true;
       $('#document-file').disabled = true;

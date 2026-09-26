@@ -250,6 +250,13 @@ def test_rate_limiter_bounds_requests():
     assert limiter.allow("client-b")
 
 
+def test_health_advertises_trace_only_when_an_operator_path_exists(monkeypatch):
+    monkeypatch.delenv("EVIDENCETRACE_OPERATOR_KEY", raising=False)
+    monkeypatch.delenv("EVIDENCETRACE_LOCAL_MODE", raising=False)
+    monkeypatch.setenv("AWS_LAMBDA_FUNCTION_NAME", "public-demo")
+    assert TestClient(app).get("/health").json()["trace_enabled"] is False
+
+
 def test_cross_site_requests_rejected_in_local_mode(monkeypatch):
     monkeypatch.setenv("EVIDENCETRACE_LOCAL_MODE", "true")
     monkeypatch.delenv("AWS_LAMBDA_FUNCTION_NAME", raising=False)

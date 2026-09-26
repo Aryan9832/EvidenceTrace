@@ -71,6 +71,10 @@ def nist_pdf_page_url(source_uri: str, page: int | None) -> str | None:
 def health() -> dict:
     return {"status": "ok", "version": "0.2.0", "generation_enabled": settings.generation_enabled,
             "semantic_enabled": settings.semantic_enabled, "local_mode": settings.local_mode,
+            # Lambda exposes a public research experience. Traces are private because
+            # they can contain request metadata, so only advertise them when the
+            # current deployment has an operator access path.
+            "trace_enabled": bool(settings.operator_key or settings.local_mode),
             "review_enabled": bool(settings.operator_key or settings.local_mode) and not bool(os.getenv("AWS_LAMBDA_FUNCTION_NAME")),
             "storage": "ephemeral" if str(settings.db_path).startswith("/tmp/") else "filesystem"}
 
